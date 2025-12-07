@@ -2,7 +2,7 @@
 
 Phillp Docstrings is a lightweight app to fill docstrings in Python functions and classes using LLMs.
 
-The package uses [ast](https://docs.python.org/3/library/ast.html) from the standard library to parse files. While Google Gemini is used as the LLM to generate docstrings.
+The package uses [ast](https://docs.python.org/3/library/ast.html) from the standard library to parse files, while Google Gemini is used as the LLM to generate docstrings.
 
 ![](/../main/images/demo.png?raw=true)
 
