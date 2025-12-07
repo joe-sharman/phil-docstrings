@@ -1,8 +1,10 @@
 from typing import Protocol
+import logging
 
 from google import genai
 import time
 
+logger = logging.getLogger(__name__)
 
 class Model(Protocol):
     """Protocol for defining interaction with model providers
@@ -23,6 +25,7 @@ class GeminiModel:
             response = self.client.models.generate_content(model=self.model, contents=prompt)
         except Exception:
             # Basic exception handling for rate limits
+            logger.warning("Rate limit hit, sleeping for 60 seconds")
             time.sleep(60)
-            response = self.client.models.generate_content(model=self.model, contents=prompt)
+            response = self.generate(prompt)
         return response.text
