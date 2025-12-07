@@ -1,5 +1,5 @@
 [project]
-name = "docs-gen"
+name = "phil-docstrings"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
@@ -9,3 +9,5 @@ dependencies = [
     "click>=8.3.1",
     "google-generativeai>=0.8.5",
 ]
+
+

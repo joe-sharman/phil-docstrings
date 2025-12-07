@@ -22,7 +22,7 @@ install_requires = (
     )
 
 setup(
-    name="docs_gen",
+    name="phil-docstring",
     version=1,
     include_package_data=True,
     description="Tool for adding doc strings to python files using an LLM.",
@@ -35,7 +35,7 @@ setup(
     process_dependency_links=True,
     entry_points={
         'console_scripts': [
-            'docs-gen = docs_gen.interface:run',
+            'phil = phil_docstrings.interface:run',
         ],
     },
 )

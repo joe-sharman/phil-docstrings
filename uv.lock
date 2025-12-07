@@ -105,7 +105,7 @@ wheels = [
 ]
 
 [[package]]
-name = "docs-gen"
+name = "phil-docstrings"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
