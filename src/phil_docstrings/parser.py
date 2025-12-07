@@ -37,9 +37,9 @@ class DocstringInserter:
 
 
             if isinstance(child, ast.FunctionDef):
-                docstring = self.generate_docstring(child, ObjectType.FUNCTION)
+                docstring = self.generate_docstring(ast.unparse(child), ObjectType.FUNCTION)
             elif isinstance(child, ast.ClassDef):
-                docstring = self.generate_docstring(child, ObjectType.CLASS)
+                docstring = self.generate_docstring(ast.unparse(child), ObjectType.CLASS)
             else:
                 continue
 
