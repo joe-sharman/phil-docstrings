@@ -9,3 +9,5 @@ The package uses [ast](https://docs.python.org/3/library/ast.html) from the stan
 This project was made to practice working with LLM APIs.
 
 **Note:** Google _used_ to have a generous Gemini API free tier, but this has now been reduced.
+
+_Originally published on the 5th of January 2025_.
